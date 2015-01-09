@@ -4,6 +4,7 @@
 
 .DS_Store
 node_modules/
-out/
+template/static/css/
+template/static/js/
 Gruntfile.js
 template.zip
