@@ -1,0 +1,16 @@
+###
+# select news categories
+###
+
+source: db
+params:
+  action: list
+  model: topgroupitem
+  select: [fields]
+  where:
+    groupName: categories
+    selector: .
+  order:
+    createdAt: ASC
+  limit: '@{limit|10}'
+  offset: '@{offset|0}'

@@ -1,0 +1,17 @@
+###
+# select top tags
+###
+
+source: db
+params:
+  action: list
+  model: topgroupitem
+  select:
+    - fields
+  where:
+    groupName: tags
+    selector: '@{selector|.}'
+  order:
+    count: DESC
+  limit: '@{limit|10}'
+  offset: '@{offset|0}'

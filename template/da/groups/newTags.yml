@@ -1,0 +1,19 @@
+###
+# select new tags
+###
+
+source: db
+params:
+  action: list
+  model: topgroupitem
+  select:
+    - fields
+  where:
+    groupName: tags
+    selector: .
+    createdAt:
+      $gte: '@{time|$1h}'
+  order:
+    createdAt: DESC
+  limit: '@{limit|10}'
+  offset: '@{offset|0}'

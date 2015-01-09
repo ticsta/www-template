@@ -1,0 +1,38 @@
+
+site:
+  name: TICSTA
+  title: UNIMEDIA - Portalul de știri nr. 1 din Moldova
+  host: unimedia.ticsta.com
+
+defaultSection: pages
+
+###  VARIABLES
+# name - document name
+# slug - document slug
+# title - slug, name
+# section - document section
+# type - document type
+### group_GROUPNAME - example: group_tags or group_categories
+# year - document 4 year
+# month - 01..12
+# i_month - 1..12
+# day - 01..31
+# i_day - 1..31
+# short_year - 2014 > 14
+# extension - file extension
+# unique_name - groupItem uniqueName (ex: categories:politics, tags:new-york)
+# page - currentPage in pagger
+###
+permalink:
+  simple: :section/:title.:extension
+  category: :slug/
+  tag: taguri/:slug.html
+  page_by_group: data/json/:unique_name/page-:page.json
+
+
+assets:
+  names:
+    css-main:
+      - static/css/normalize.css
+      - static/css/bootstrap.css
+      - static/css/main.css

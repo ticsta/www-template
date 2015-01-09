@@ -1,0 +1,33 @@
+<% function getTitle() {
+  if($document && $document.title)
+    return $document.title;
+  if($document && $document.name)
+    return $document.name + ' - ' + $site.title;
+  return $site.title;
+}
+  function getCategory(){
+    if(!$document) return null;
+    if($document.groupItems && $document.groupItems.length>0) {
+      for(var i=0;i<$document.groupItems.length;i++ ) {
+        if($document.groupItems[i].groupName=='categories')
+        return $document.groupItems[i].uniqueName.substr(11);
+      }
+    }
+    return $document && $document.slug;
+  }
+
+  function isHome(){
+    return $file.url === '/';
+  }
+%>
+<html>
+  <head>
+    <title><%= getTitle() %></title>
+    <link rel="stylesheet" type="text/css" href="<%= $asset_src('css-main') %>">
+    <link rel="canonical" href="http://<%- $site.host + $file.url) %>" />
+    <link rel="shortcut icon" href="<%= $asset_src('static/img/favicon.ico') %>" />
+  </head>
+  <body>
+    <% content %>
+  </body>
+</html>
