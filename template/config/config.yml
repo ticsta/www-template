@@ -1,8 +1,8 @@
 
 site:
-  name: TICSTA
-  title: UNIMEDIA - Portalul de știri nr. 1 din Moldova
-  host: unimedia.ticsta.com
+  name: Ticsta
+  title: Static Website Platform
+  host: www.ticsta.com
 
 defaultSection: pages
 
@@ -25,14 +25,11 @@ defaultSection: pages
 ###
 permalink:
   simple: :section/:title.:extension
-  category: :slug/
-  tag: taguri/:slug.html
-  page_by_group: data/json/:unique_name/page-:page.json
 
 
 assets:
   names:
     css-main:
-      - static/css/normalize.css
-      - static/css/bootstrap.css
-      - static/css/main.css
+      - static/css/white.css
+    js-main:
+      - static/js/white.js
