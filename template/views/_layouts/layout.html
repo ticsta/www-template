@@ -32,12 +32,11 @@
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#full-menu">
-                <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="/">Ticsta</a>
+              <a class="navbar-brand" href="/"><img src="<%= $asset_src('static/img/v1/icon-28.png') %>"> Ticsta</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -65,13 +64,16 @@
         </nav>
       </div>
       <div id="content">
-        <div class="container">
-          <% content %>
-        </div>
+        <% content %>
       </div>
     </div>
     <div id="footer">
-
+      <div class="container">
+        <ul>
+          <li><a href="http://cp.ticsta.com">Dashboard</a><span>·</span></li>
+          <li>© Ticsta</li>
+        </ul>
+      </div>
     </div>
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
     <script type="text/javascript" src="<%- $asset_src('js-main') %>"></script>

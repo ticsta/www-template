@@ -30,6 +30,6 @@ permalink:
 assets:
   names:
     css-main:
-      - static/css/white.css
+      - static/css/white.min.css
     js-main:
-      - static/js/white.js
+      - static/js/main.min.js
