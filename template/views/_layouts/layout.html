@@ -22,6 +22,10 @@
     <link rel="stylesheet" type="text/css" href="<%= $asset_src('css-main') %>">
     <link rel="canonical" href="http://<%- $site.host + $file.url %>" />
     <link rel="shortcut icon" href="<%= $asset_src('static/img/v1/icon-16.png') %>" />
+    <script type="text/javascript">
+      if(window.location.hostname === 'ticsta.com')
+        window.location.replace("http://www.ticsta.com" + window.location.pathname);
+    </script>
   </head>
 
   <body>
