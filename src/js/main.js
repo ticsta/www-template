@@ -1,5 +1,8 @@
 $(function() {
-    $('#full-menu').bind('click', 'ul li a', function(event) {
-        $.scrollTo(event.target.hash, 250);
-    });
+  $('a.scroll-to').click(function(evnt) {
+    evnt.preventDefault();
+    evnt.stopPropagation();
+    $.scrollTo(event.target.hash, 250);
+    return false;
+  });
 });

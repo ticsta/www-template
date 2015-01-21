@@ -4,6 +4,8 @@
       return $document.title;
     if($document && $document.name)
       return $document.name + ' - ' + $site.title;
+    if($file.header.title)
+      return $file.header.title + ' - ' + $site.title;
     return $site.title;
   }
   function isHome() {
@@ -46,8 +48,8 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="full-menu">
               <ul class="nav navbar-nav">
-                <li><a href="#features">Features</a></li>
-                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#features" class="scroll-to">Features</a></li>
+                <li><a href="#pricing" class="scroll-to">Pricing</a></li>
               </ul>
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="http://cp.ticsta.com" class="btn btn-primary">Sign In</a></li>
