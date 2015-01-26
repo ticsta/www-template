@@ -21,9 +21,9 @@
     <title>
       <%= getTitle() %>
     </title>
-    <link rel="stylesheet" type="text/css" href="<%= $asset_src('css-main') %>">
+    <link rel="stylesheet" type="text/css" href="<%= $asset_src('styles') %>">
     <link rel="canonical" href="http://<%- $site.host + $file.url %>" />
-    <link rel="shortcut icon" href="<%= $asset_src('static/img/v1/icon-16.png') %>" />
+    <link rel="shortcut icon" href="<%= $asset_src('img/v1/icon-16.png') %>" />
     <script type="text/javascript">
       if(window.location.hostname === 'ticsta.com')
         window.location.replace("http://www.ticsta.com" + window.location.pathname);
@@ -42,7 +42,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="/"><img src="<%= $asset_src('static/img/v1/icon-28.png') %>"> Ticsta <sup class="label label-danger">alpha</sup></a>
+              <a class="navbar-brand" href="/"><img src="<%= $asset_src('img/v1/icon-28.png') %>"> Ticsta <sup class="label label-danger">alpha</sup></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -74,7 +74,7 @@
       </div>
     </div>
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-    <script type="text/javascript" src="<%- $asset_src('js-main') %>"></script>
+    <script type="text/javascript" src="<%- $asset_src('scripts') %>"></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
