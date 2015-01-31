@@ -5,11 +5,10 @@
 source: db
 params:
   action: list
-  model: topgroupitem
-  select: [fields]
+  model: groupitem
+  select: fields
   where:
-    groupName: categories
-    selector: .
+    group: categories
   order:
     createdAt: ASC
   limit: '@{limit|10}'

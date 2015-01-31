@@ -5,6 +5,7 @@ site:
   host: www.ticsta.com
 
 defaultSection: pages
+defaultLanguage: en
 
 ###  VARIABLES
 # name - document name

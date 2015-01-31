@@ -5,12 +5,10 @@
 source: db
 params:
   action: list
-  model: topgroupitem
-  select:
-    - fields
+  model: groupitem
+  select: fields
   where:
-    groupName: tags
-    selector: .
+    group: tags
     createdAt:
       $gte: '@{time|$1h}'
   order:
