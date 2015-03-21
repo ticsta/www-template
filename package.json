@@ -1,6 +1,6 @@
 {
   "name": "www.ticsta.com",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Tictsa template for www.ticsta.com",
   "main": "index.js",
   "scripts": {

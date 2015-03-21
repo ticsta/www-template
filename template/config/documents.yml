@@ -1,0 +1,10 @@
+documents:
+  - model: index
+    #data:
+    #  title: Index
+    maxage: 30m
+    permalink: /
+    view: index
+    #format: html
+    #output: view|json|content
+    #template: jade
